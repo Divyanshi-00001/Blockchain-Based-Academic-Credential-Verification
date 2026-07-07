@@ -1,201 +1,224 @@
-<h1 align="center"> Deepfake-Based Identity Fraud Detection </h1>
-<h3 align="center"> AI-Based Identity Verification using Deep Learning </h3>
+<h1 align="center"> Blockchain-Based Academic Credential Verification </h1>
+<h3 align="center"> Secure Academic Certificate Issuance and Verification using Blockchain Technology </h3>
 
 ---
 
 ## About
 
-Deepfake-Based Identity Fraud Detection is an AI-powered system developed to detect manipulated facial images and videos used for identity fraud. The project leverages deep learning techniques to distinguish between genuine and AI-generated media, helping organizations prevent identity spoofing and unauthorized access.
+Blockchain-Based Academic Credential Verification is a decentralized application developed to provide a secure, transparent, and tamper-proof platform for issuing, storing, and verifying academic credentials.
 
-The system is designed for applications where digital identity verification is essential, including online banking, remote recruitment, e-KYC, online examinations, and secure authentication systems.
+Traditional certificate verification systems rely on centralized databases, making them vulnerable to document forgery, unauthorized modifications, and time-consuming verification procedures. This project addresses these challenges by leveraging blockchain technology and decentralized storage to ensure that every issued credential is authentic and verifiable.
 
-The objective of this project is to provide an efficient, scalable, and reliable solution for detecting deepfake content while maintaining high detection accuracy.
+The system enables educational institutions to issue digital certificates securely, while students can access and share their credentials with employers or other organizations for instant verification.
+
+---
+
+## Project Highlights
+
+- Secure issuance of academic certificates.
+- Blockchain-based immutable credential records.
+- Decentralized storage using IPFS.
+- Student and institution login portals.
+- Digital certificate verification.
+- Secure document sharing.
+- Ethereum smart contract integration.
+- Transparent and tamper-proof verification process.
+
+---
+
+## System Overview
+
+- Educational institutions issue certificates through the platform.
+- Certificate metadata is securely stored on the Ethereum blockchain.
+- Certificate files are stored using IPFS.
+- Every certificate is associated with a unique blockchain transaction.
+- Students can securely access and share their certificates.
+- Employers and organizations can instantly verify credential authenticity.
+
+---
+
+## Technologies Used
+
+- Ethereum Blockchain
+- Solidity Smart Contracts
+- React.js
+- Node.js
+- IPFS (InterPlanetary File System)
+- MetaMask
+- Truffle Framework
+- Web3.js
+
+---
+
+## System Architecture
+
+```
+Institution Portal
+        │
+        ▼
+Certificate Generation
+        │
+        ▼
+Hash Generation
+        │
+        ▼
+Upload to IPFS
+        │
+        ▼
+Store Hash on Ethereum Blockchain
+        │
+        ▼
+Student Dashboard
+        │
+        ▼
+Certificate Sharing
+        │
+        ▼
+Credential Verification
+```
 
 ---
 
 ## Features
 
-- Detects manipulated (deepfake) facial images.
-- Supports deep learning-based classification.
-- Provides confidence score for each prediction.
-- User-friendly web interface.
-- Supports model training and inference.
-- Modular architecture for future enhancements.
-- Suitable for research and real-world applications.
+### Institution
 
----
+- Register and authenticate institution
+- Upload academic certificates
+- Manage student records
+- Verify uploaded certificates
+- View issued credentials
 
-## Applications
+### Student
 
-- Banking and Financial Services
-- Digital KYC Verification
-- Online Examination Systems
-- Video Interview Verification
-- Social Media Identity Protection
-- Government Identity Verification
-- Cybersecurity
+- Secure login
+- Access academic certificates
+- Download certificates
+- Share certificates securely
+- View credential history
 
----
+### Verifier
 
-## Project Architecture
-
-```
-User Upload
-     │
-     ▼
-Image / Video Input
-     │
-     ▼
-Preprocessing
-     │
-     ▼
-Face Detection
-     │
-     ▼
-Deep Learning Model
-     │
-     ▼
-Prediction
-     │
-     ▼
-Result Generation
-```
-
----
-
-## Technology Stack
-
-- Python 3.11
-- PyTorch
-- OpenCV
-- Streamlit
-- NumPy
-- Pillow
-
----
-
-## Project Structure
-
-```
-Deepfake-Based-Identity-Fraud-Detection/
-
-│── config/
-│── docs/
-│── trainers/
-│── tests/
-│── inference.py
-│── train.py
-│── web_ui.py
-│── requirements.txt
-│── README.md
-│── LICENSE
-```
+- Verify certificate authenticity
+- View certificate information
+- Check blockchain transaction details
 
 ---
 
 ## Installation
 
-Clone the repository
+### Prerequisites
+
+- Node.js
+- MetaMask
+- Ganache or Ethereum Test Network
+- Truffle
+
+### Clone Repository
 
 ```bash
-git clone https://github.com/Divyanshi-00001/Deepfake-Based-Identity-Fraud-Detection.git
+git clone https://github.com/Divyanshi-00001/Blockchain-Based-Academic-Credential-Verification.git
 ```
 
-Move into the project directory
+Move to the project directory
 
 ```bash
-cd Deepfake-Based-Identity-Fraud-Detection
+cd Blockchain-Based-Academic-Credential-Verification
 ```
 
-Create a virtual environment
+Install dependencies
 
 ```bash
-python -m venv venv
+npm install
 ```
 
-Activate the virtual environment
-
-Windows
+Compile smart contracts
 
 ```bash
-venv\Scripts\activate
+truffle compile
 ```
 
-Linux/macOS
+Deploy smart contracts
 
 ```bash
-source venv/bin/activate
+truffle migrate
 ```
 
-Install the required dependencies
+Start the React application
 
 ```bash
-pip install -r requirements.txt
+cd client
+npm start
 ```
 
----
+Open the application
 
-## Running the Application
-
-Launch the web interface
-
-```bash
-streamlit run web_ui.py
 ```
-
----
-
-## Model Training
-
-To train the deep learning model
-
-```bash
-python train.py
+http://localhost:3000
 ```
 
 ---
 
-## Model Inference
+## Folder Structure
 
-To perform prediction on new data
+```
+Blockchain-Based-Academic-Credential-Verification/
 
-```bash
-python inference.py
+│── client/
+│── contracts/
+│── migrations/
+│── test/
+│── build/
+│── src/
+│── README.md
+│── package.json
+│── truffle-config.js
 ```
 
 ---
 
 ## Future Enhancements
 
-- Real-Time Webcam Detection
-- Video Deepfake Detection
-- Explainable AI Visualization
-- Face Anti-Spoofing
-- Blockchain-Based Identity Verification
-- Multi-Agent AI Investigation
-- Cloud Deployment
+- QR Code based certificate verification
+- Multi-University support
+- NFT-based academic credentials
+- Mobile application
+- AI-assisted certificate fraud detection
+- Cloud deployment
+- Multi-factor authentication
+
+---
+
+## Applications
+
+- Universities
+- Colleges
+- Training Institutes
+- Government Organizations
+- Recruitment Agencies
+- Corporate HR Verification
 
 ---
 
 ## Contributing
 
-Contributions and improvements are welcome.
+Contributions are welcome.
 
 To contribute:
 
 - Fork the repository.
-- Create a new feature branch.
+- Create a feature branch.
 - Commit your changes.
 - Submit a Pull Request.
+
+---
+
+## Authors
+
+This project is developed for academic and educational purposes.
 
 ---
 
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-## Acknowledgements
-
-This project is developed for educational and research purposes. It builds upon deep learning concepts for deepfake detection and aims to provide a practical solution for AI-based identity fraud prevention.
